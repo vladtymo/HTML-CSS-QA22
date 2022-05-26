@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+    <style>
+        /* ------------- CSS Styles ------------- */
+        /* Selector template:
+
+        selector-type {
+            property-name1: value1;
+            property-name2: value2;
+        }
+
+        */
+
+        /* ------------- Tag selector ------------- */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: antiquewhite;
+        }
+
+        mark {
+            color: cyan;
+            background-color: rgb(26, 87, 85);
+            font-size: 10px;
+        }
+
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        /* ------------- Class selector ------------- */
+        .main-text {
+            color: brown;
+            font-size: 18px;
+            background-color: aqua;
+        }
+
+        .super-text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 22px;
+            font-weight: 700;
+
+            text-decoration: overline;
+            text-transform: lowercase;
+
+            line-height: 50px;
+            letter-spacing: 5px;
+            word-spacing: 10px;
+            text-shadow: 1px 2px gray;
+        }
+
+        /* font family types */
+        .serif-font {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .sans-serif-font {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .monospace-font {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .cursive-font {
+            font-family: cursive;
+        }
+
+        .fantasy-font {
+            font-family: fantasy;
+        }
+
+        /* ------------- Id selector ------------- */
+        #main-title {
+            font-size: 32px;
+            text-shadow: 0px 0px 20px cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-title">Intro to <abbr title="Cascade Style Sheets">CSS</abbr>. Selectors</h1>
+
+    <h2>Inline Styles</h2>
+    <!-- inline styles: style="property-name: value; property-name2: value2;" -->
+    <p>Lorem ipsum dolor <mark>sit amet</mark> consectetur adipisicing elit. Cumque animi, suscipit, incidunt tempora
+        quod <b style="color: red; background-color: beige; font-size: 28px;">dolores</b>,
+        quam illum maiores enim aliquam culpa vitae? Laborum architecto nisi consequatur in deleniti id, accusantium
+        distinctio <b style="color: red; background-color: beige; font-size: 28px;">excepturi iste</b> itaque? Officia
+        reprehenderit labore distinctio dolorem ipsum eum rem,
+        explicabo
+        reiciendis! <mark>hgirer raegaerg</mark> Minima, nihil? Accusantium deleniti debitis doloribus.</p>
+
+    <h2>Styles with Selectors</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel facere reiciendis sequi iste mollitia dolore
+        aliquam perferendis. <span class="main-text">Cum aliquam</span> aperiam vitae laboriosam. Sunt, sapiente. Ex
+        tempore aut corrupti dolorem
+        delectus amet minima itaque nemo non culpa! Repudiandae facilis et id nisi in atque porro voluptatem explicabo
+        ratione assumenda, error <span class="main-text">perferendis officia</span> suscipit eaque, nemo qui nesciunt,
+        dolor eligendi! Corrupti quia
+        aliquid sapiente, vitae quod molestiae? Odit at accusantium veniam temporibus repellendus quos eveniet amet
+        <span class="main-text">blanditiis</span> provident velit? Animi commodi aut esse suscipit minus modi temporibus
+        doloremque sapiente, quod
+        ipsam fugiat laudantium natus nulla odio aliquid, quidem quibusdam optio architecto ab.
+    </p>
+
+    <h2>Lorem ipsum dolor sit amet!</h2>
+    <p>Lorem ipsum <span class="super-text">dolor sit amet</span>, consectetur adipisicing elit. Amet animi officia aut
+        alias repudiandae inventore fugit, aliquid illo labore facilis, vel dolor quibusdam fuga. Asperiores facilis
+        <span class="super-text">alias</span> quo nam laboriosam.
+    </p>
+
+    <h2>Font Family Types</h2>
+
+    <h3>serif font</h3>
+    <p class="serif-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima sequi quae aut quisquam
+        numquam laboriosam adipisci cumque eaque ipsam. Atque neque culpa sapiente enim aspernatur cupiditate ratione
+        labore saepe.</p>
+
+    <h3>sans-serif font</h3>
+    <p class="sans-serif-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima sequi quae aut
+        quisquam
+        numquam laboriosam adipisci cumque eaque ipsam. Atque neque culpa sapiente enim aspernatur cupiditate ratione
+        labore saepe.</p>
+
+    <h3>monospace font</h3>
+    <p class="monospace-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima sequi quae aut
+        quisquam
+        numquam laboriosam adipisci cumque eaque ipsam. Atque neque culpa sapiente enim aspernatur cupiditate ratione
+        labore saepe.</p>
+
+    <h3>cursive font</h3>
+    <p class="cursive-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima sequi quae aut quisquam
+        numquam laboriosam adipisci cumque eaque ipsam. Atque neque culpa sapiente enim aspernatur cupiditate ratione
+        labore saepe.</p>
+
+    <h3>fantasy font</h3>
+    <p class="fantasy-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima sequi quae aut quisquam
+        numquam laboriosam adipisci cumque eaque ipsam. Atque neque culpa sapiente enim aspernatur cupiditate ratione
+        labore saepe.</p>
+</body>
+
+</html>
