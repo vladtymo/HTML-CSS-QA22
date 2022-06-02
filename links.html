@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgba(0, 135, 135);
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid rgb(0, 78, 78);
+            /* cursor: pointer; */
+        }
+
+        /* Псевдо-класи - селектори, які активуються при певній умові */
+
+        /* При наведенні мишки */
+        nav a:hover {
+            background-color: rgb(0, 78, 78);
+        }
+
+        /* При нажатті */
+        nav a:active {
+            border-color: white;
+        }
+
+        /* Для невідвідуваного посилання */
+        nav a:link {
+            background-color: black;
+        }
+
+        /* Для відвідуваного посилання */
+        nav a:visited {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://google.com.ua">External Link</a>
+            </li>
+            <li>
+                <a href="./layout.html">Internal Link</a>
+            </li>
+            <li>
+                <a href="#p-3">Go to Paragraph 3</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <h1 id="first-title">Some Article</h1>
+        <h2>Paragraph 1</h2>
+        <p>Lorem <strong>blablabla</strong> ipsum dolor, sit amet consectetur adipisicing elit. Ex maiores accusantium
+            neque, voluptates est
+            voluptas aliquid perferendis inventore minima vel necessitatibus molestias maxime consequatur adipisci
+            tenetur obcaecati quidem impedit velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            eos eaque eligendi hic iure consequuntur deleniti nisi sit maxime accusantium molestias maiores laboriosam
+            pariatur vel aliquam sunt, esse magnam accusamus voluptatum non ducimus magni nemo veniam. Earum
+            reprehenderit expedita consectetur reiciendis temporibus alias quam praesentium magni fugit incidunt aliquam
+            quisquam optio inventore dolorem explicabo quae ea adipisci labore vero unde eaque iste, omnis natus hic?
+            Sunt, veniam. Voluptate maxime sunt fugiat numquam iure aperiam architecto similique accusamus maiores quia
+            facere incidunt eius vel quasi debitis accusantium voluptatum totam corrupti, perferendis minima fuga earum
+            nostrum. Ut qui amet nesciunt illo aut optio, ex magnam voluptatum earum error quia. Ducimus, esse quas,
+            nobis impedit error dolore consequuntur laudantium, odio pariatur tempora saepe. Dignissimos impedit quod,
+            fugit cumque ab accusamus voluptatibus consequuntur dolore nulla in excepturi omnis ad nam quos. Ullam nihil
+            minus repudiandae recusandae nostrum asperiores rerum, hic odit odio, dicta quae obcaecati quas voluptates
+            qui et facere fuga, harum debitis nisi consequatur sunt necessitatibus assumenda unde! Cum autem rem
+            cupiditate sapiente ex dicta mollitia delectus placeat a, repudiandae ea asperiores quod, minus voluptatibus
+            iste architecto sint ullam, deleniti eaque dignissimos maxime aperiam quasi. Natus aliquid magni laudantium
+            repudiandae saepe architecto vitae excepturi eius esse explicabo aliquam aspernatur, magnam voluptas fugit
+            earum iure corrupti possimus ullam deserunt. At aperiam dolores libero illo fugit velit error, porro
+            suscipit vel, hic, quam omnis esse consectetur facilis accusantium facere itaque sint! Velit, minus error.
+            Rem laudantium reiciendis culpa voluptas rerum praesentium deserunt animi totam repellat atque ex eveniet,
+            dignissimos quisquam soluta enim suscipit exercitationem est nulla ullam consequuntur veniam. Accusantium
+            impedit ut temporibus sint eveniet? Voluptatum rem minima in id, dignissimos explicabo molestias tenetur
+            accusamus, quae modi aperiam repellendus fugiat! Autem reiciendis officiis sapiente laboriosam. Ex cumque
+            eum ipsam impedit deserunt enim. Maxime, fugiat quia?</p>
+
+        <h2>Paragraph 2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex maiores accusantium neque, voluptates est
+            voluptas aliquid perferendis inventore minima vel necessitatibus molestias maxime consequatur adipisci
+            tenetur obcaecati quidem impedit velit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            dolor rem molestiae vero sed quod at consequuntur illum incidunt, facere labore neque, vel officia eaque.
+            Quibusdam, molestiae a at dolore quas cupiditate. Aut dolorem accusantium, doloribus fugit omnis labore,
+            ipsam, eos praesentium totam vel aliquam deserunt laborum modi repellat possimus sunt! Repellat repellendus
+            natus deserunt quod quis, totam laudantium distinctio exercitationem corporis dolor, laborum dolores,
+            officia error explicabo praesentium iste minima. Rem consequatur impedit hic suscipit ab deserunt vel
+            repudiandae doloribus voluptatem distinctio. Placeat labore amet, harum expedita aut dolorem officia esse
+            accusantium hic beatae quia accusamus natus suscipit nobis!</p>
+
+        <h2 id="p-3">Paragraph 3</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex maiores accusantium neque, voluptates est
+            voluptas aliquid perferendis inventore minima vel necessitatibus molestias maxime consequatur adipisci
+            tenetur obcaecati quidem impedit velit.</p>
+
+        <h2>Paragraph 4</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex maiores accusantium neque, voluptates est
+            voluptas aliquid perferendis inventore minima vel necessitatibus molestias maxime consequatur adipisci
+            tenetur obcaecati quidem impedit velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+            asperiores quaerat nam praesentium odit, quisquam nulla sequi optio velit adipisci obcaecati quos. Odit
+            vitae laboriosam eligendi mollitia cum quasi voluptatem. Aut, autem aliquid laudantium dicta consectetur
+            fuga dolore quidem ducimus debitis, cumque est omnis ea velit. Nesciunt vel soluta repellat culpa
+            consequatur voluptate nemo, qui temporibus sit consectetur corrupti eius doloribus, laudantium velit
+            delectus modi aliquid voluptatem aut quo magni debitis? Nobis delectus tenetur omnis iste quisquam! Dolor
+            enim nam dolorum omnis, temporibus accusamus amet rerum molestias! Dolore, quibusdam aliquam quisquam enim
+            voluptas blanditiis soluta a iste dolorem. Numquam quae eos aut inventore delectus corporis, totam sunt
+            voluptates natus atque labore vero excepturi, distinctio deserunt cumque quasi nihil ea iure rem enim.
+            Praesentium dolores natus delectus est vero tenetur fugiat quas harum autem in mollitia quam quisquam nisi
+            excepturi veniam rem enim officiis facilis, necessitatibus dolor! Qui blanditiis dolorum sed autem vero
+            nobis nihil totam, officiis ea dolores fugit soluta distinctio sapiente quibusdam quisquam earum quas
+            praesentium excepturi placeat, expedita sunt reiciendis, incidunt ipsa. Quasi, earum. A error molestias
+            atque facere nesciunt doloremque ullam voluptatibus libero debitis ipsa! Maiores, facere omnis rerum quas
+            iure ut voluptatum corporis ullam dicta deserunt alias non quidem. Debitis doloremque quod officiis, esse
+            repudiandae perferendis dolorum commodi cumque repellendus earum. Tempore expedita cumque ullam, eaque
+            soluta fugiat quisquam explicabo debitis aspernatur mollitia quis iusto temporibus laboriosam! Quos
+            asperiores quaerat neque nesciunt assumenda culpa aliquam alias molestias voluptatem minus sequi inventore
+            possimus dolor veniam, aliquid, ipsam distinctio obcaecati odit enim. Optio, accusantium cumque consequuntur
+            eaque iste suscipit repellat voluptas ea, a beatae voluptatum, sed doloribus et. Obcaecati temporibus unde,
+            similique maiores autem eius reiciendis voluptatem dolores minus beatae, neque illo eaque, hic voluptatibus
+            totam repudiandae placeat sint corrupti aperiam ea magnam architecto quo? Dolorum atque rem tempora ullam
+            consequatur quos pariatur aut, aliquid magnam at molestias maxime dolores nesciunt. Adipisci recusandae
+            quasi quo, facilis, accusamus dicta amet aperiam consequuntur saepe enim iste veniam consequatur numquam
+            distinctio. Aperiam sit culpa veritatis. Nobis magnam, sunt a distinctio totam atque repellendus quisquam
+            natus eaque sit quae corrupti temporibus facilis labore libero et illum quod ipsum doloremque neque, eveniet
+            dolor! Eos quae doloremque, minima repellendus dicta accusamus porro? Dolore consectetur quod quis eos
+            quaerat ad obcaecati ipsam. Tempore a soluta blanditiis quibusdam expedita similique officia minus neque aut
+            natus! Fuga, doloremque aut. Officia, maxime dolores impedit veritatis architecto illum velit!</p>
+
+        <h2>Paragraph 5</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex maiores accusantium neque, voluptates est
+            voluptas aliquid perferendis inventore minima vel necessitatibus molestias maxime consequatur adipisci
+            tenetur obcaecati quidem impedit velit.</p>
+
+        <a href="#first-title">Go Back</a>
+    </div>
+</body>
+
+</html>
