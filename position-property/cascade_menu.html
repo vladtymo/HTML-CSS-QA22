@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Menu</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 10px;
+        }
+
+        /* Level 1 */
+        nav ul {
+            font-size: 0;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        nav li {
+            display: inline;
+            position: relative;
+        }
+
+        nav li a {
+            display: inline-block;
+            width: 120px;
+            /* height: 40px; */
+            padding: 15px 10px;
+            text-align: center;
+            font-size: 1rem;
+
+            background-color: rgb(61, 142, 76);
+            color: white;
+            border: 1px solid rgb(33, 97, 45);
+            text-decoration: none;
+        }
+
+        nav li:hover>a {
+            background-color: rgb(33, 97, 45);
+            color: white;
+        }
+
+        /* Level 2 */
+        nav ul ul {
+            position: absolute;
+            left: 0;
+            /* visibility: hidden; */
+            display: none;
+        }
+
+        nav ul li:hover>ul {
+            display: block;
+        }
+
+        nav ul ul li {
+            display: block;
+        }
+
+        /* Level 3 > */
+        nav ul ul ul {
+            left: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a>
+                <ul>
+                    <li><a href="#">Man</a></li>
+                    <li><a href="#">Woomen</a>
+                        <ul>
+                            <li><a href="#">Dress</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Shoes</a>
+                                <ul>
+                                    <li><a href="#">Dress</a>
+                                        <ul>
+                                            <li><a href="#">Dress</a></li>
+                                            <li><a href="#">Pants</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pants</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Products</a>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Totam</a></li>
+                    <li><a href="#">Dignissimos</a>
+                        <ul>
+                            <li><a href="#">Dress</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Inventore</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sed velit maxime, minus eos libero itaque
+            similique esse placeat cum at. Ad minus expedita voluptas sunt quod sequi nam maiores ut doloremque, numquam
+            laudantium veniam incidunt in, totam magnam quas. Quis eaque animi praesentium hic ullam fuga sequi, nam
+            accusantium aliquid obcaecati aut unde a, nemo modi quidem voluptatibus cupiditate autem dolorum eius! Illo
+            at, nisi placeat blanditiis veniam debitis unde vero corporis cum. Architecto provident minus nemo, nesciunt
+            laboriosam fuga sed, quisquam consequatur modi voluptatibus temporibus saepe eveniet distinctio quis esse
+            quasi quos a laborum libero rem! Aliquid, iure.</p>
+    </main>
+</body>
+
+</html>
