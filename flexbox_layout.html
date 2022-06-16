@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            color: white;
+
+            margin: 0;
+        }
+
+        /* Outer container */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            /* viewport-height */
+            /* height: 100vh; */
+        }
+
+        .main-container>* {
+            padding: 10px;
+        }
+
+        header {
+            background-color: lightcoral;
+            /* height: 100px; */
+            flex-basis: 100px;
+        }
+
+        nav {
+            background-color: rgb(115, 184, 246);
+            /* height: 50px; */
+            flex-basis: 50px;
+        }
+
+        footer {
+            background-color: darkslategray;
+            /* height: 130px; */
+            flex-basis: 130px;
+        }
+
+        /* Inner container */
+        .inner-container {
+            display: flex;
+            gap: 10px;
+            flex-grow: 1;
+
+            padding: 0;
+        }
+
+        .inner-container>* {
+            padding: 10px;
+        }
+
+        aside {
+            background-color: rgb(157, 63, 76);
+            flex-basis: 25%;
+        }
+
+        main {
+            background-color: darkslateblue;
+            flex-basis: 50%;
+        }
+
+        /* Header container */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div>Logo</div>
+            <div>username email ...</div>
+        </header>
+        <nav>Navigation</nav>
+        <div class="inner-container">
+            <aside>Left Aside</aside>
+            <main>
+                Main Content<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia tempore, aspernatur officia
+                eaque quisquam tenetur voluptatum magni sit maiores optio dicta unde vero harum! Odit unde amet
+                perferendis vero minima repellat voluptates quas perspiciatis quam iusto officia ipsum temporibus illum
+                expedita harum, nulla ex velit inventore voluptas quidem corrupti laudantium aspernatur. Reiciendis
+                distinctio placeat dolor omnis beatae commodi quos earum, saepe facere incidunt? Fuga deserunt quaerat
+                cumque voluptatibus quo aspernatur vitae similique nihil quod rerum, consequuntur eum ducimus!
+                Reiciendis eum praesentium modi aut ullam inventore quis, illum ut veniam qui, porro ipsam esse
+                reprehenderit sit minus? Fugiat non qui, magni sapiente, fugit quas labore fuga ut maiores reprehenderit
+                velit aut accusantium enim quam repellendus, repudiandae iste officiis quis voluptatum dolorem!
+                Provident dolores eaque qui, vitae, eveniet exercitationem dolorem cupiditate ex blanditiis quo ut
+                voluptate perferendis unde alias repellat reprehenderit deserunt iure quos vero accusamus aliquid enim
+                dignissimos sed earum! Ad, amet repudiandae? Harum quisquam, deserunt quod nobis ex eos, amet dolorem
+                velit recusandae ducimus pariatur consectetur porro. A officiis aliquam accusamus aliquid ratione
+                exercitationem qui, consequuntur sit quos non id facere voluptatem quibusdam ipsa illum placeat ea ut
+                nulla aperiam, eum rem voluptatibus. Vitae autem et provident ad officia? Ad cum nam aliquam facere
+                laudantium velit non explicabo veritatis corporis error perferendis minima sequi quis rerum numquam,
+                pariatur enim eos incidunt accusamus! Voluptatibus, facilis ab laboriosam et quisquam, id culpa alias
+                illum excepturi quae ipsam eaque inventore. Dolore, mollitia ullam corporis vel enim alias esse fugit
+                obcaecati repellendus nulla odio animi consequatur sunt, distinctio corrupti repellat odit perferendis
+                deserunt quia iste quod? Quia earum libero mollitia fugit sed reprehenderit cupiditate soluta, commodi
+                temporibus, architecto saepe similique assumenda quam! Vitae, culpa tenetur voluptatibus numquam dolores
+                eveniet, quaerat, voluptas est accusantium vero nostrum sapiente quos. Maiores molestiae reiciendis illo
+                ullam perferendis necessitatibus similique itaque repudiandae quas, natus quis? Necessitatibus, porro
+                omnis? Minus illum quis aliquam delectus harum aspernatur voluptates molestias exercitationem ipsam
+                perspiciatis? Nesciunt recusandae, ullam quas nostrum aut sit tempora veniam rem, quos cumque dolorem
+                autem accusantium necessitatibus voluptatem at distinctio fugit. Neque suscipit culpa dignissimos
+                cupiditate magnam sit aut, officiis velit perferendis unde expedita illo veniam temporibus voluptas,
+                fugiat nostrum praesentium tempore laborum obcaecati ipsa commodi placeat. Quod ullam assumenda
+                corporis. Debitis impedit natus quod molestias quibusdam aliquid eveniet minima! Numquam, quaerat
+                asperiores. Cumque labore soluta nemo repellat maxime sapiente at, dolores natus voluptatem, corrupti,
+                quis ratione. Illum officiis beatae consequatur accusamus, rerum pariatur sed nobis, eius assumenda
+                perferendis, ex impedit esse maiores harum deleniti tempore? Corporis esse distinctio debitis laboriosam
+                totam aliquid, repellat recusandae velit eius mollitia animi dicta optio iste rem eligendi odit deserunt
+                quos. Quis nulla quam soluta dolores quaerat accusamus assumenda corporis autem inventore tempora quia
+                explicabo accusantium ratione ex odit iste fugit, animi voluptatem asperiores sint! Exercitationem alias
+                tempore perspiciatis nulla ab illo hic consequatur, accusantium et quae qui sequi, quibusdam neque ipsum
+                omnis, corporis iste odio harum animi. Neque ab nulla labore minima ut eum earum eligendi illo suscipit
+                porro dignissimos error aspernatur delectus vel in numquam cumque, autem maxime officia. Exercitationem
+                numquam deleniti dignissimos voluptatibus ipsum, nesciunt distinctio ab est officia consectetur itaque
+                atque? Ut corrupti vel nam aut est iusto, dolore laboriosam vero vitae quidem ipsa accusamus quis
+                repudiandae! Commodi nostrum iusto excepturi. Dolorum earum rem ullam amet recusandae nulla, mollitia
+                quos soluta cum odio repudiandae porro, fugiat eligendi obcaecati necessitatibus quia fuga dolorem
+                blanditiis aliquam cumque architecto.
+            </main>
+            <aside>Right Aside</aside>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
