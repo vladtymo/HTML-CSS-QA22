@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Layout</title>
+    <style>
+        body {
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        header,
+        nav,
+        main,
+        aside,
+        footer {
+            padding: 4%;
+        }
+
+        header,
+        footer {
+            text-align: center;
+        }
+
+        header {
+            background-color: darkslategray;
+        }
+
+        nav {
+            background-color: brown;
+        }
+
+        footer {
+            background-color: dimgrey;
+        }
+
+        .container {
+            display: flex;
+            height: 400px;
+        }
+
+        main {
+            background-color: darkgreen;
+
+            flex-basis: 50%;
+        }
+
+        aside:first-child {
+            background-color: darkslateblue;
+            flex-basis: 30%;
+        }
+
+        aside:last-child {
+            background-color: darkmagenta;
+            flex-basis: 20%;
+        }
+
+        /* Media Queries */
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+
+            /* css */
+            aside:last-child {
+                display: none;
+            }
+
+            main {
+                flex-basis: 60%;
+            }
+
+            aside:first-child {
+                flex-basis: 40%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                order: -1;
+            }
+        }
+
+        @media print {
+            main {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <nav>Menu</nav>
+    <div class="container">
+        <aside>Left Aside</aside>
+        <main>Main Content</main>
+        <aside>Right Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html>
